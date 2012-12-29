@@ -1,5 +1,8 @@
 # Holder.js for Rails
 
+[![Build Status](https://travis-ci.org/NARKOZ/holder_rails.png)](https://travis-ci.org/NARKOZ/holder_rails])
+[![Gem Version](https://fury-badge.herokuapp.com/rb/holder_rails.png)](http://badge.fury.io/rb/holder_rails)
+
 Provides Holder.js to render image placeholders entirely on the client side.
 
 ## Installation
