@@ -45,6 +45,10 @@ holder_tag '500x800', 'Example text', 'gray', :id => 'new', :class => 'special'
 
 For more information, check out [holder readme](https://github.com/imsky/holder#readme).
 
+## Versioning
+
+holder_rails 1.7.0 == Holder.js 1.7
+
 ## License
 
 Released under the BSD 2-clause license. See LICENSE.txt for details.
