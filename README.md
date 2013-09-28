@@ -27,6 +27,14 @@ Add to your JavaScript manifest file:
 //= require holder
 ```
 
+And if you're using [turbolinks](https://github.com/rails/turbolinks)
+don't forget to run `Holder` after `page:change` event:
+
+```coffee
+$(document).bind 'page:change', ->
+  Holder.run()
+```
+
 You can use `holder_tag` helper in your views:
 
 ```ruby
