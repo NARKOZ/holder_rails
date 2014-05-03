@@ -1,5 +1,5 @@
 require 'holder_rails'
-require 'test/unit'
+require 'minitest/autorun'
 
 class HolderRailsTest < ActionView::TestCase
   include HolderRails::Helpers
