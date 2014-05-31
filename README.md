@@ -27,7 +27,7 @@ Add to your JavaScript manifest file:
 //= require holder
 ```
 
-And if you're using [turbolinks](https://github.com/rails/turbolinks)
+For versions **less than 2.3.2**, if you're using [turbolinks](https://github.com/rails/turbolinks)
 don't forget to run `Holder` after `page:change` event:
 
 ```coffee
