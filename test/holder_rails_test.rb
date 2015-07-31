@@ -8,6 +8,7 @@ class HolderRailsTest < ActionView::TestCase
     assert_dom_equal '<img data-src="holder.js/100x100/text:100x100/" src="" />', holder_tag(100)
     assert_dom_equal '<img data-src="holder.js/200x300/text:200x300/" src="" />', holder_tag('200x300')
     assert_dom_equal '<img data-src="holder.js/100%x75/text:100%x75/" src="" />', holder_tag('100%x75')
+    assert_dom_equal '<img data-src="holder.js/100px75/text:100px75/" src="" />', holder_tag('100px75')
   end
 
   test "text" do
