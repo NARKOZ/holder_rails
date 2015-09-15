@@ -3,7 +3,7 @@ module HolderRails
     def holder_tag(size, text='', theme=nil, html_options={})
       size = "#{size}x#{size}" unless size =~ /\A\d+[%p]?x\d+\z/
       text = text.to_s.empty? ? size : text
-      options = {:src => '', :data => {:src => "holder.js/#{size}/text:#{text}/#{theme}"}}
+      options = {:src => '', :data => {:src => "holder.js/#{size}?text=#{text}&theme=#{theme}"}}
       options = options.merge(html_options)
 
       tag :img, options
