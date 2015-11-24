@@ -39,19 +39,22 @@ You can use `holder_tag` helper in your views:
 
 ```ruby
 holder_tag 100
-# => <img data-src="holder.js/100x100/text:100x100/" src="" />
+# => <img data-src="holder.js/100x100?" src="" />
 
 holder_tag '200x300'
-# => <img data-src="holder.js/200x300/text:200x300/" src="" />
+# => <img data-src="holder.js/200x300?" src="" />
 
 holder_tag '200x300', 'Lorem ipsum'
-# => <img data-src="holder.js/200x300/text:Lorem ipsum/" src="" />
+# => <img data-src="holder.js/200x300?text=Lorem ipsum" src="" />
 
 holder_tag '200x300', 'Lorem ipsum', 'social'
-# => <img data-src="holder.js/200x300/text:Lorem ipsum/social" src="" />
+# => <img data-src="holder.js/200x300?text=Lorem ipsum&amp;theme=social" src="" />
 
-holder_tag '500x800', 'Example text', 'gray', :id => 'new', :class => 'special'
-# => <img class="special" data-src="holder.js/500x800/text:Example text/gray" id="new" src="" />
+holder_tag '500x800', 'Example text', 'gray', id: 'new', class: 'special'
+# => <img class="special" data-src="holder.js/500x800?text=Example text&amp;theme=gray" id="new" src="" />
+
+holder_tag '500x800', 'Example text', 'gray', { id: 'new', class: 'special' }, { font: 'Helvetica' }
+# => <img class="special" data-src="holder.js/500x800?font=Helvetica&amp;text=Example text&amp;theme=gray" id="new" src="" />
 ```
 
 For more information, check out [holder readme](https://github.com/imsky/holder#readme).
