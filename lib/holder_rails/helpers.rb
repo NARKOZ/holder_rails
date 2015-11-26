@@ -1,7 +1,7 @@
 module HolderRails
   module Helpers
     def holder_tag(size, text='', theme=nil, html_options={}, holder_options={})
-      size = "#{size}x#{size}" unless size =~ /\A\d+%?x\d+\z/
+      size = "#{size}x#{size}" unless size =~ /\A\d+p?x\d+\z/
 
       holder_options[:text] = text unless text.to_s.empty?
       holder_options[:theme] = theme unless theme.nil?
