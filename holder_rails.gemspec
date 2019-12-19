@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.name          = "holder_rails"
   gem.version       = HolderRails::VERSION
   gem.authors       = ["Nihad Abbasov"]
-  gem.email         = ["mail@narkoz.me"]
+  gem.email         = ["nihad@42na.in"]
   gem.description   = %q{Provides Holder.js to render image placeholders entirely on the client side}
   gem.summary       = %q{Holder.js for Rails asset pipeline}
   gem.homepage      = "https://github.com/narkoz/holder_rails"
